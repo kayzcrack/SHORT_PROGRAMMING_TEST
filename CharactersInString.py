@@ -1,4 +1,5 @@
 import cProfile
+import sys
 from timeit import Timer
 
 # ############################
@@ -17,7 +18,13 @@ def find_char_NN(string1, string2):
                 result += char1
                 break
     return result
-print "find_char_NN result is: ", find_char_NN('Chocolate','Later')	
+	
+string1 = raw_input('Enter first string:  ')	
+string2 = raw_input('Enter second string: ')
+print "Result for Order N*N: ", find_char_NN(string1,string2)
+print ""
+print ""
+	
 
 # ############################
 # ORDER N
@@ -35,5 +42,8 @@ def find_char_N(string1, string2):
         if char1 in characterset:
             result += char1
     return result
-print "find_char_N result is: ", find_char_N('Banana','Canada')		
+	
+string1 = raw_input('Enter third string:  ')	
+string2 = raw_input('Enter fourth string: ')	
+print "Result for Order N: ", find_char_N(string1,string2)		
 
