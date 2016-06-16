@@ -1,0 +1,35 @@
+Depth first is a way of traversing a tree or graph as the case may be.
+This approach of traversal simply visits each node before its children.
+
+EXAMPLE :
+
+nodes
+----nodeA
+		----childA1
+		--------childA1node1
+		--------childA1node2
+		----childA2
+
+----nodeB
+		----childB1
+		----childB2
+
+----nodeC
+		----childC1
+
+programmatically to traverse the above tree
+
+dfs(nodes n){
+    visit(n);
+    for each children c of n
+        if c is unvisited
+        {
+        dfs(c);
+            add edge nc to tree T
+        }
+ }
+ The nodes A, B and C are visited, then for each of these nodes the children are visited, 
+ if the children have their own child nodes there are visited as well, this process goes on and
+ on until every node is visited in the tree (recursion).
+ In depth-first search the idea is to travel as deep as possible from neighbour to neighbour
+ once, before backtracking.
