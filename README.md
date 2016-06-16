@@ -27,6 +27,7 @@ Question one is just a text files
 QUESTION TWO
 
 Question two is a python file, copy and paste the code after the dollar sign on your console
+
 $ python CharactersInString.py
 
 QUESTION THREE
